@@ -1,8 +1,10 @@
 # AutoAPI
 
-This project uses [autogen](https://github.com/microsoft/autogen) to connect a LLM to a database and put it inline to all requests coming into a FastAPI server in order to materialize a RESTful HTTP API from a description of functionality provided by the developer.
+_What if we wired an LLM to an HTTP server and connected it to a database and told it to be an API?_
 
 I built this because I think we're at a point where AI systems can reason about a desired technical outcome and materialize that functionality on demand, without developers having to spend valuable brain power on rote development tasks. Development tasks will more fall to describing outcomes and not writing stepwise system logic.
+
+This project uses [autogen](https://github.com/microsoft/autogen) to connect a LLM to a database and put it inline to all requests coming into a FastAPI server in order to materialize a RESTful HTTP API from a description of functionality provided by the developer.
 
 It's a proof of concept for that theory and it does work, albeit not as reliably as I'd like with my prompts, though I'm confident that with some time and effort the prompts can be improved to yield more consistent results. I tested against GPT-4 and a [local version of Llama-2 fine-tuned for function calls](https://huggingface.co/Trelis/Llama-2-7b-chat-hf-function-calling-v2). It (obviously) works best when using GPT-4.
 
