@@ -2,6 +2,8 @@
 
 _What if we wired an LLM to an HTTP server and connected it to a database and told it to be an API?_
 
+![what is this thing doing](what-this-thing-is-doing.png "What is this thing doing?")
+
 I built this because I think we're at a point where AI systems can reason about a desired technical outcome and materialize that functionality on demand, without developers having to spend valuable brain power on rote development tasks. Development tasks will more fall to describing outcomes and not writing stepwise system logic.
 
 This project uses [autogen](https://github.com/microsoft/autogen) to connect a LLM to a database and put it inline to all requests coming into a FastAPI server in order to materialize a RESTful HTTP API from a description of functionality provided by the developer.
