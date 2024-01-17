@@ -1,0 +1,4 @@
+pyautogen>=0.2.3
+fastapi
+psycopg2-binary
+uvicorn[standard]
